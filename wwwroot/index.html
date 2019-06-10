@@ -1,0 +1,64 @@
+<!<!DOCTYPE html>
+</html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="button-kn.css">
+
+	<style type="text/css">
+		         .block { Display: inline-block;
+
+		                  border : 2px solid green;
+		                  width  : 100px;
+		                  height : 100px; 
+		                  padding: 3,5px;
+		                  margin : -4px ;
+		                }
+	</style>
+	<script type="text/javascript">
+		function step (number) {
+
+			var elem = document.getElementById(number);
+			
+			if(elem.innerHTML == '<img src="пустота.png">' ) {
+				elem.innerHTML = '<img src="Крестик.png">';
+
+			}
+			else{
+				elem.innerHTML = '<img src="нолик.png">';
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<div >
+	     <div id="0" class="block" onclick="step(0)"><img src="пустота.png"></div>
+	     <div id="1" class="block" onclick="step(1)"><img src="пустота.png"></div>
+	     <div id="2" class="block" onclick="step(2)"><img src="пустота.png"></div>
+    </div>
+
+	<div>
+	     <div id="3" class="block" onclick="step(3)"><img src="пустота.png"></div>
+	     <div id="4" class="block" onclick="step(4)"><img src="пустота.png"></div>
+	     <div id="5" class="block" onclick="step(5)"><img src="пустота.png"></div>
+    </div>
+
+    <div>
+	     <div id="6" class="block" onclick="step(6)"><img src="пустота.png"></div>
+	     <div id="7" class="block" onclick="step(7)"><img src="пустота.png"></div>
+	     <div id="8" class="block" onclick="step(8)"><img src="пустота.png"></div>
+	</div>
+
+	<br>
+	<br>
+
+	<a href="#" class="button">Играть с ботом</a>
+	<a href="#" class="button1">Играть с человеком</a>
+
+	
+</body>
+</html>

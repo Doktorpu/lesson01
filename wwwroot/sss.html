@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script language="JavaScript">
+
+var img1="крестик.png";
+
+var img2="нолик.png";
+	new Image().src=img2;
+
+function step(cl)
+{
+	if(cl)
+{
+
+document.all.img.src=img2;
+	}
+	else
+{
+
+document.all.img.src=img1;
+	}
+}
+
+document.write("<img name='img' src='"+img1+"' onClick='step(true)' >");
+
+</script>
+
+</body>
+</html>
